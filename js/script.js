@@ -1,5 +1,5 @@
 // business logic
-function account(first, last) {
+function Account(first, last) {
     this.firstName = first;
     this.lastName = last;
     this.Initialamout=Initialamout
@@ -7,6 +7,11 @@ function account(first, last) {
     this.withdraw=withdraw;
     totalamount=Initialamout+this.deposit
     totalbalance=totalamount-this.withdraw 
+  }
+  
+  account.prototype.fullName = function() {
+    return this.firstName + " " + this.lastName;
+    $("ul#account").text("<li><span class='account'>" + newAccount.firstName + "</span></li>");
   }
   
   // user interface logic
