@@ -1,6 +1,13 @@
-# Account-of-bank
+# Description
 
-this project is help client to creat accont in bank an deposit and withdraw
+1. This project is about the way bank account work on line.
+2. It shows the initial account ,deposite and withdraw money.
+
+## Technologies used.
+
+HTML.
+CSS.
+Javascript.
 
 ## setup used
 
@@ -19,3 +26,4 @@ this project is help client to creat accont in bank an deposit and withdraw
 ## lisence &copyright
 
 (c) Nyirabazungu Valentine,2019
+
