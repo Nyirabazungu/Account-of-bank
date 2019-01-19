@@ -11,7 +11,7 @@ function Account(first, last) {
   
   account.prototype.fullName = function() {
     return this.firstName + " " + this.lastName;
-    $("ul#account").text("<li><span class='account'>" + newAmount.firstName + "</span></li>");
+    $("ul#account").text("<li><span class='amount'>" + newAmount.firstName + "</span></li>");
   }
     Balance.prototype.deposit = function(){
                 var totalAmount =this.Initialdeposit + deposit;
@@ -33,6 +33,7 @@ Balance.prototype.withdraw= function(){
     }
 
     // user interface logic
+    
    $(document).ready(function() {
 
     $("form#new-amount").submit(function(event) {
@@ -41,13 +42,11 @@ Balance.prototype.withdraw= function(){
       $(".submit").click();
     });
   
-      var newAmount= new Amount(inputtedFirstName, inputtedLastName);
-  
-      $("ul#amount").text("<li><span class='amount'>" + newAmount.firstName + "</span></li>");
-  
-      $("input#new-first-name").val("");
-      $("input#new-last-name").val("");
-    });
-  });
-  var inputtedInitialamount=$("input") 
+      var newAmount= new Amount(inputtedFirstName, inputtedLastName).val();
+    
+   $(".check-balance").click(function(){
+   var deposit =$("input#new-deposit").val();
+   var newbalance= new Balance(inputtedInitialamount,Initialdeposit)
+   var withdraw=$("#)
+   });
   
