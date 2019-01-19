@@ -3,18 +3,18 @@
   <head>
     <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 
-    <h1>Account Of Bank</h1>
+    <h1>Account of Bank</h1>
            <div id="account">
             Enter an amount to withdraw or deposit: 
             <input type="number" value="0">  
        <div id="depositAmount">
-           <input number ="depos" value="Deposit" type="button" onClick=bank_deposit(this.form)>
+           <input number ="depos" value="Deposit" type="button" onClick=bank_deposit(this.deposit)>
      </div>
      <div id="withdrawAmount">
-           <input number="withd" value="Withdraw" type="button" onClick=bank_withdraw(this.form)>
+           <input number="withd" value="Withdraw" type="button" onClick=bank_withdraw(this.withdraw)>
  </div>
  <div class="totalAmount">
-         Current Balance: 
+         New balance: 
         <input type="number" value ="bank_contents_money"><br>
     </div>
       </div>

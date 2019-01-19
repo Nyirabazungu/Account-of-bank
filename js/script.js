@@ -5,28 +5,49 @@ function Account(first, last) {
     this.Initialamout=Initialamout
     this.deposit= deposit;
     this.withdraw=withdraw;
-    totalamount=Initialamout+this.deposit
-    totalbalance=totalamount-this.withdraw 
+    totalAmount=InitiAlamout+this.deposit
+    totalBalance=totalAmount-this.withdraw 
   }
   
   account.prototype.fullName = function() {
     return this.firstName + " " + this.lastName;
-    $("ul#account").text("<li><span class='account'>" + newAccount.firstName + "</span></li>");
+    $("ul#account").text("<li><span class='account'>" + newAmount.firstName + "</span></li>");
   }
-  
-  // user interface logic
-  $(document).ready(function() {
-    $("form#new-contact").submit(function(event) {
+    Balance.prototype.deposit = function(){
+                var totalAmount =this.Initialdeposit + deposit;
+
+            }
+Balance.prototype.withdraw= function(){
+            if(totalAmount==0){
+                return"please your balance is broke"
+            }
+                else if(totalAmount>0){
+                    var balance =totalAmount - withdraw;
+    
+                }
+    function resetFields() {
+        $("input #Account").val("");
+        $("input #initialdeposit").val("");
+        $("input #deposit").val("");
+        $("input #withdraw").val("");
+    }
+
+    // user interface logic
+   $(document).ready(function() {
+
+    $("form#new-amount").submit(function(event) {
       event.preventDefault();
+      $("input").text();
+      $(".submit").click();
+    });
   
-      var inputtedFirstName = $("input#new-first-name").val();
-      var inputtedLastName = $("input#new-last-name").val();
+      var newAmount= new Amount(inputtedFirstName, inputtedLastName);
   
-      var newContact = new Contact(inputtedFirstName, inputtedLastName);
-  
-      $("ul#contacts").text("<li><span class='account'>" + newContact.firstName + "</span></li>");
+      $("ul#amount").text("<li><span class='amount'>" + newAmount.firstName + "</span></li>");
   
       $("input#new-first-name").val("");
       $("input#new-last-name").val("");
     });
-  }); 
+  });
+  var inputtedInitialamount=$("input") 
+  
