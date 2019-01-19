@@ -5,50 +5,28 @@
     <link rel="stylesheet" type= "text/css" href="./css/styles.css">
     <title>bank account</title>
   </head>
-  <boby>
-    <form action="action_page.php">
-         <div class="container">
-          
-           <h1>REGISTRATION FORM</h1>
-            <div class= new-account>
-           <label for="firstName"><b>first Name</b></label>
-           <input type="text" placeholder="Enter your first name" name="firstName" required><br>
-
-           <label for="lastName"><b>last Name</b></label>
-           <input type="text" placeholder="Enter your last name" name="lastName" required><br>
-       
-           <label for="contact"><b>contact</b></label>
-           <input type="text" placeholder="telphone" name="contact" required><br>
-       
-           <label for="idNumber"><b>Identity</b></label>
-           <input type="text" placeholder="id number" name="idNumber" required><br>
-
-           <div class="id-account"></div>
-           <label for="accountNumber"><b>Account Number</b></label>
-           <input type="text" placeholder=" AC no." name="idAccount" required><br>
-
-         
+  <body>
+    <div class="container">
+      <h1>Register New Account</h1>
+       <div class="row">
+        <div class="col-md-6">
+          <h2>Add an account:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+            </div>
           </div>
-            <div class="account-client">
-              <button class="btn-create"><i class=""></i><a href="client.html">Create account</a></button>
-              <h2>Bank statement </h2>
-              <div id="account">
-               Enter an amount to withdraw or deposit: 
-               <input name ="deposit" value="0">
-          </div> 
-          <div id="depositAmount">
-              <input name ="depos" value="Deposit" type="button" onClick=bank_deposit(deposit.form)>
         </div>
-        <div id="withdrawAmount">
-              <input name="withd" value="Withdraw" type="button" onClick=bank_withdraw(this.form)>
-    </div>
-    <div class="totalAmount">
-            your account has amount: 
-           <input name ="bank_contents_money"><br>
-       </div>
-         </div>
-         </div>
-</form>
+
+            <button type="submit" class="btn"><a href="client.html">Create Account</a></button>
+          </form>
+
 <script src="JS/jquery-3.3.1.min.js"></script>
           <script src="./js/script.js/"></script>
        </body>

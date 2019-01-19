@@ -2,20 +2,21 @@
 <html>
   <head>
     <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type= "text/css" href="./css/styles.css">
-    <title>bank account</title>
-  </head>
-  <boby>
-    <form action="client-account">
-         <div class="container">
-          
-    <h3></h3>
-              <a href="index.html">go back</a>
-              
-         </div>
-         </div>
+
+    <h1>Current Amount</h1>
+           <div id="account">
+            Enter an amount to withdraw or deposit: 
+            <input name ="deposit" value="0">  
+       <div id="depositAmount">
+           <input name ="depos" value="Deposit" type="button" onClick=bank_deposit(deposit.form)>
+     </div>
+     <div id="withdrawAmount">
+           <input name="withd" value="Withdraw" type="button" onClick=bank_withdraw(this.form)>
+ </div>
+ <div class="totalAmount">
+         New Mount: 
+        <input name ="bank_contents_money"><br>
+    </div>
+      </div>
+      </div>
 </form>
-<script src="JS/jquery-3.3.1.min.js"></script>
-          <script src="./js/script.js/"></script>
-       </body>
-       </html>
