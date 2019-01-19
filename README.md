@@ -1,18 +1,19 @@
-# Description
-
-1. This project is about the way bank account work on line.
-2. It shows the initial account ,deposite and withdraw money.
+#ACCOUNT OF BANK
+## BY valentine
+###Description
+it will enable the accept the users to creat bank account online and  initial account ,deposite and withdraw money.
 
 ## Technologies used.
 
-HTML.
-CSS.
-Javascript.
+* HTML.
+* CSS.
+* Javascript.
+* jQuery
+* Bootstrap
 
 ## setup used
 
 -visual studio code
--google chrome
 -terminal
 
 ##contributors
@@ -25,5 +26,5 @@ Javascript.
 
 ## lisence &copyright
 
-(c) Nyirabazungu Valentine,2019
+Copyright(c) Nyirabazungu Valentine,2019
 
